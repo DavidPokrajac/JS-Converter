@@ -45,4 +45,40 @@ window.onload = function(){
 
     });
 
+    // Referencing to sub-containers 3 and 4
+    var inputQuery3 = document.querySelector("#third-div input[type='number']");
+    var output3 = document.querySelector("#third-div p");
+    var button3 = document.getElementById("button3");
+
+    var inputQuery4 = document.querySelector("#fourth-div input[type='number']");
+    var output4 = document.querySelector("#fourth-div p");
+    var button4 = document.getElementById("button4");
+
+    // Adding event listeners for third and fourth subcontainer
+    button3.addEventListener("click", function(e){
+
+        e.preventDefault();
+        if(inputQuery3.value > 0){
+            var number = inputQuery3.value / 3.2808;
+            var n = number.toFixed(2);
+            output3.textContent = inputQuery3.value + " feet" + " = " + n + " m";
+        } else{
+            alert("Only values larger than 0!");
+        }
+
+    });
+
+    button4.addEventListener("click", function(e){
+
+        e.preventDefault();
+        if(inputQuery4.value > 0){
+            var number = inputQuery4.value * 3.2808;
+            var n = number.toFixed(2);
+            output4.textContent = inputQuery4.value + " m" + " = " + n + " ft.";
+        } else{
+            alert("Only values larger than 0!");
+        }
+
+    });
+
 }
