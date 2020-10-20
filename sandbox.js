@@ -117,4 +117,24 @@ window.onload = function(){
 
     });
 
+    // Adding jQuery; slideToggle method to toggle div containers with a click t h3
+    $("#one").click(function(){
+        $("#first-div").slideToggle(500);
+    });
+    $("#two").click(function(){
+        $("#second-div").slideToggle(500);
+    });
+    $("#three").click(function(){
+        $("#third-div").slideToggle(500);
+    });
+    $("#four").click(function(){
+        $("#fourth-div").slideToggle(500);
+    });
+    $("#five").click(function(){
+        $("#fifth-div").slideToggle(500);
+    });
+    $("#six").click(function(){
+        $("#sixth-div").slideToggle(500);
+    });
+
 }
