@@ -1,0 +1,98 @@
+:root{
+    --first-color: darkorchid;
+    --second-color: thistle;
+    --third-color: plum;
+    --fourth-color: purple;
+    --fifth-color: lavender;
+    --br-rs: 10px;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: var(--first-color);
+}
+
+h1{
+    text-align: center;
+    color: var(--second-color);
+}
+
+.container{
+    border: 2px solid var(--second-color);
+    margin: 1em auto;
+    text-align: center;
+    padding: 1em;
+    width: 40%;
+}
+
+input[type="number"]{
+    padding: 0.2em;
+    font-size: 1.2em;
+    border-radius: var(--br-rs);
+    font-family: inherit;
+    background-color: var(--third-color);
+    border: none;
+    color: var(--first-color);
+    font-weight: bold;
+}
+
+input[type="number"]::placeholder{
+    color: var(--first-color);
+    font-weight: bold;
+    font-family: inherit;
+}
+
+input[type="button"]{
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.4em;
+    font-family: inherit;
+    border-radius: var(--br-rs);
+    border: none;
+    color: var(--first-color);
+    background-color: var(--third-color);
+}
+
+input[type="reset"]{
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.4em;
+    font-family: inherit;
+    border-radius: var(--br-rs);
+    border: none;
+    color: var(--first-color);
+    background-color: var(--third-color);
+}
+
+input[type="button"]:hover, input[type="reset"]:hover{
+    font-weight: bold;
+    background-color: var(--first-color);
+    border: 1px solid var(--third-color);
+    color: var(--third-color);
+    transition: background-color 0.2s ease-in, color 0.2s ease-out, border 0.1s linear;
+    cursor: pointer;
+}
+
+.container div{
+    margin: 2em auto;
+}
+
+.output{
+    font-size: 2em;
+    font-style: italic;
+    color: var(--second-color);
+}
+
+.slide{
+    display: none;
+}
+
+h3:hover{
+    cursor: pointer;
+    color: var(--fourth-color);
+}
+
+h3{
+    font-weight: bold;
+    color: var(--fifth-color);
+}
