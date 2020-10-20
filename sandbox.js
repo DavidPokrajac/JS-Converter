@@ -81,4 +81,40 @@ window.onload = function(){
 
     });
 
+    // Referencing to sub-containers 5 and 6
+    var inputQuery5 = document.querySelector("#fifth-div input[type='number']");
+    var output5 = document.querySelector("#fifth-div p");
+    var button5 = document.getElementById("button5");
+
+    var inputQuery6 = document.querySelector("#sixth-div input[type='number']");
+    var output6 = document.querySelector("#sixth-div p");
+    var button6 = document.getElementById("button6");
+
+    // Adding event listeners for fifth and sixth subcontainer
+    button5.addEventListener("click", function(e){
+
+        e.preventDefault();
+        if(inputQuery5.value > 0){
+            var number = inputQuery5.value / 0.26417;
+            var n = number.toFixed(2);
+            output5.textContent = inputQuery5.value + " US gallons" + " = " + n + " L";
+        } else{
+            alert("Only values larger than 0!");
+        }
+
+    });
+
+    button6.addEventListener("click", function(e){
+
+        e.preventDefault();
+        if(inputQuery6.value > 0){
+            var number = inputQuery6.value * 0.26417;
+            var n = number.toFixed(2);
+            output6.textContent = inputQuery6.value + " L" + " = " + n + " US gallons";
+        } else{
+            alert("Only values larger than 0!");
+        }
+
+    });
+
 }
